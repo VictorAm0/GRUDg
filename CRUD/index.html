@@ -1,0 +1,62 @@
+<!DOCTYPE html>button
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/gravar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+        <h1 class="">Cadastro de Cliente</h1>
+    </header>
+
+    <main>
+      <button type="button" id="cadastrarCliente" class="button blue mobile">Cadastrar Cliente</button>
+
+      <table id="tableCliente" class="records">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Celular</th>
+            <th>Cidade</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <div class="" id="modal">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Cliente</h2>
+            <span  id="modalClose" class="modal-close">&#10006</span>
+          </header>
+          <form id="form" class="modal-form">
+            <input type="text" id="nome" class="modal-field" placeholder="Nome do cliente" required>
+            <input type="email" id="email" class="modal-field" placeholder="Digite o email do cliente" required>
+            <input type="tel" id="celular" class="modal-field" placeholder="Digite o celular do cliente" required >
+            <input type="text" id="cidade" class="modal-field" placeholder="Digite a cidade do cliente" required >
+          </form>
+          
+          <footer class="">
+            <button id="salvar" class="button green">Salvar</button>
+            <button id="cancelar" class="button red">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <footer>
+        Copyrigth &copy; Victor Amorim.victoramorimdesousa2002@gmail.com
+    </footer>
+  </body>
+  <script src="js/main.js" defer></script>
+</html>
